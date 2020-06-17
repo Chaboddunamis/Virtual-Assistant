@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+
+.reactor-container {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.circle {
+    border-radius: 50%;
+}
+.abs-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.core-inner {
+    width: 70px;
+    height: 70px;
+    border: 20px solid #000;
+    background-color: #FFFFFF;
+}
+.core-outer {
+    width: 120px;
+    height: 120px;
+    background-color: #FFFFFF;
+}
+.core-wrapper {
+    width: 180px;
+    height: 180px;
+    background-color: #000;
+}
+.tunnel {
+    width: 215px;
+    height: 215px;
+    background-color: #FFFFFF;
+}
+.coil-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: reactor-anim 3s infinite;
+}
+.coil {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: calc(50% - 110px);
+    left: calc(50% - 15px);
+    border-bottom: 5px solid #000;
+    transform-origin: 15px 110px;
+    background-color:#000;
+}
+.coil-1 {
+    transform: rotate(0deg);
+}
+.coil-2 {
+    transform: rotate(45deg);
+}
+.coil-3 {
+    transform: rotate(90deg);
+}
+.coil-4 {
+    transform: rotate(135deg);
+}
+.coil-5 {
+    transform: rotate(180deg);
+}
+.coil-6 {
+    transform: rotate(225deg);
+}
+.coil-7 {
+    transform: rotate(270deg);
+}
+.coil-8 {
+    transform: rotate(315deg);
+}
+@keyframes reactor-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
