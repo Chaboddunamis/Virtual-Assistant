@@ -134,10 +134,10 @@ def assistant(command):
             mail.starttls()
 
             #login
-            mail.login('Henry.uwakxy@gmail.com', 'Chaboddunamis')
+            mail.login('email address', 'Password')
 
             #send message
-            mail.sendmail('Henry Uwakwe', 'uwaks4arsenal@yahoomail.com', content)
+            mail.sendmail('Name of receiver', 'email address', content)
 
             #end mail connection
             mail.close()
