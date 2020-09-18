@@ -167,7 +167,7 @@ def assistant(command):
           talkToMe('Current time is %d hours %d minutes' % (now.hour, now.minute))
         
 
-        #Greet Sofia
+        #Greet Jarvis
     elif 'hello' in command:
         day_time = int(strftime('%H'))
         if day_time < 12:
